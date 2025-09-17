@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,51 +28,55 @@
         }
         .card-footer {
             margin-top: 20px;
+            /* Added for multiple buttons */
+            display: flex;
+            gap: 10px;
+            justify-content: flex-start;
         }
         @media (max-width: 768px) {
-          .hero-heading {
-            font-size: 2rem;
-          }
+         .hero-heading {
+           font-size: 2rem;
+         }
 
-          .hero-subheading {
-            font-size: 1rem;
-          }
+         .hero-subheading {
+           font-size: 1rem;
+         }
 
-          .hero-link {
-            padding: 10px 16px;
-            font-size: 0.9rem;
-          }
+         .hero-link {
+           padding: 10px 16px;
+           font-size: 0.9rem;
+         }
 
-          .hero-profile-pic {
-            width: 180px;
-            height: auto;
-          }
+         .hero-profile-pic {
+           width: 180px;
+           height: auto;
+         }
 
-          .section-title {
-            font-size: 1.8rem;
-          }
+         .section-title {
+           font-size: 1.8rem;
+         }
 
-          .project-card {
-            min-height: auto;
-            max-width: 100%;
-          }
+         .project-card {
+           min-height: auto;
+           max-width: 100%;
+         }
 
-          .project-card p {
-            font-size: 0.95rem;
-          }
+         .project-card p {
+           font-size: 0.95rem;
+         }
 
-          .learn-more {
-            font-size: 0.9rem;
-            padding: 8px 16px;
-          }
+         .learn-more {
+           font-size: 0.9rem;
+           padding: 8px 16px;
+         }
 
-          .contact-info li {
-            font-size: 0.95rem;
-          }
+         .contact-info li {
+           font-size: 0.95rem;
+         }
 
-          footer p {
-            font-size: 0.8rem;
-          }
+         footer p {
+           font-size: 0.8rem;
+         }
         }
     </style>
 </head>
@@ -82,6 +86,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -92,11 +97,11 @@
     <section id="home" class="hero apple-style-hero">
         <div class="hero-inner">
             <img src="pp.jpg" alt="Rajkumar Kushwaha Profile Photo" class="hero-profile-pic">
-            <h1 class="hero-heading">Rajkumar Kushwaha</h1>
-            <p class="hero-subheading">Founder of foundervers - Software Engineer | Network & Systems engineer intern at Coxh health | Visionary</p>
+            [cite_start]<h1 class="hero-heading">Rajkumar Kushwaha</h1> [cite: 1]
+            <p class="hero-subheading">Software Engineer | Founder of founder Vers | IT Network Engineer</p>
             <div class="hero-links">
                 <a href="#projects" class="hero-link">View Projects</a>
-                <a href="#skills" class="hero-link secondary">Technical Skills</a>
+                <a href="Kushwaha_Rajkumar_Engineer.pdf" class="hero-link secondary" download>Download Resume</a>
             </div>
         </div>
     </section>
@@ -104,127 +109,86 @@
     <main>
         <section id="about" class="about section-card">
             <div class="container">
-                <h2 class="section-title neon-text">About</h2>
-                <p>I’m Rajkumar Kushwaha, a junior pursuing a B.S. in Computer Science at Missouri State University with minors in Math and IT. I specialize in backend and Frontend development, with hands-on experience building production-grade apps using technologies
-                    like JS, Kotlin, Python, and Supabase, Firebase, Flutter, and more. My academic and project work reflect deep interest in scalable systems, API integration, and modern DevOps practices (CI/CD, GitHub Actions). I’m currently working as an IT Technician at MSU,
-                    where I’ve resolved 98% of support tickets on first contact. I’m also the founder of ConResX, a secure social platform in development. I’m actively seeking a Fall 2025 software engineering internship where I can make
-                    meaningful contributions and grow with a high-impact team.</p>
+                <h2 class="section-title neon-text">About Me</h2>
+                [cite_start]<p>I am a dedicated and results-driven Computer Science student at Missouri State University, pursuing minors in IT Cybersecurity, Mathematics, and Entrepreneurship[cite: 5, 7]. My passion lies in architecting and developing full-stack applications and robust network infrastructures. [cite_start]I am the founder of 'founder Vers' [cite: 16][cite_start], a startup networking application I built from the ground up using Flutter and PostgreSQL[cite: 19]. [cite_start]My professional experience includes roles as an IT Network Engineer Intern at CoxHealth [cite: 38][cite_start], where I managed production network hardware and enhanced security protocols [cite: 40, 42][cite_start], and as a Senior IT Support Specialist at my university [cite: 44][cite_start], where I achieved a 98% first-contact resolution rate and mentored junior technicians[cite: 48, 49]. I thrive in dynamic environments where I can apply my skills in software development, network management, and problem-solving to create impactful technology solutions.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="experience section-card">
+            <div class="container">
+                <h2 class="section-title neon-text">Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-card glassmorphic-card">
+                        <h3>IT Network Engineer Intern</h3>
+                        <p><strong>CoxHealth</strong> | Springfield, MO</p>
+                        [cite_start]<p><em>May 2025 – Aug 2025</em></p> [cite: 39]
+                        <ul>
+                            [cite_start]<li>Owned the end-to-end configuration of a network test lab, preparing stacked Aruba switches for production with VLANs, DHCP, DNS, and ACLs[cite: 40].</li>
+                            [cite_start]<li>Diagnosed and resolved critical network outages in high-stakes environments, including a Cardiovascular ICU, by performing careful firmware updates without disrupting patient care[cite: 41].</li>
+                            [cite_start]<li>Enhanced network security by implementing Access Control Lists (ACLs) and ensuring new device configurations were HIPAA compliant[cite: 42].</li>
+                            [cite_start]<li>Deployed and configured Aruba 3810M, 7240xm, and Cisco Catalyst switches in production environments[cite: 43].</li>
+                        </ul>
+                    </div>
+                    <div class="experience-card glassmorphic-card">
+                        <h3>Senior IT Support Specialist</h3>
+                        <p><strong>Missouri State University</strong> | Springfield, MO</p>
+                        [cite_start]<p><em>June 2023 – Present</em></p> [cite: 46, 47]
+                        <ul>
+                            [cite_start]<li>Utilized Team Dynamix, Bomgar, and Azure to manage user accounts and troubleshoot issues, maintaining a 98% first-contact resolution rate for IT support tickets[cite: 48].</li>
+                            [cite_start]<li>Mentored and trained junior technicians on ITIL best practices, boosting team efficiency by 60% and improving knowledge sharing[cite: 49].</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projects" class="projects section-card">
             <div class="container">
-                <h2 class="section-title neon-text">Software Projects</h2>
+                <h2 class="section-title neon-text">Projects</h2>
                 <div class="project-grid">
-                 <article>
-                        <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="startupNest.png">
-                                <img src="startupNest.png" alt="social media" class="project-image">
-                            </div>
-                            <div class="project-content">
-                                <h3>foundervers</h3>
-                                <p>new gen social media for founders</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://foundervers.com/" class="learn-more">Visit</a>
-                            </div>
-                        </div>
-                    </article>
                     <article>
                         <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="sampleimg.png">
-                                <img src="sampleimg.png" alt="Dashboard UI for financial data filtering" class="project-image">
+                            <div class="zoom-container" data-img="startupNest.png">
+                                <img src="startupNest.png" alt="founder Vers App Screenshot" class="project-image">
                             </div>
                             <div class="project-content">
-                                <h3>Financial Data Filter App(Web App)</h3>
-                                <p>Responsive web app to dynamically filter and sort financial data by user-defined ranges.</p>
+                                [cite_start]<h3>founder Vers - Mobile & Web App</h3> [cite: 16]
+                                [cite_start]<p>Architected and developed a full-stack startup networking application featuring user authentication, dynamic posts, real-time messaging, and investment tracking, built with a feature-first architecture[cite: 19, 20, 22].</p>
+                                [cite_start]<p><strong>Technologies:</strong> Flutter, Dart, PostgreSQL, Supabase, Docker, Git[cite: 17].</p>
                             </div>
                             <div class="card-footer">
-                                <a href="https://github.com/soyRex-codes/financial-data-app" class="learn-more">View code</a>
+                                <a href="your_mobile_demo_link_here" class="learn-more">Mobile Demo</a>
+                                <a href="your_web_demo_link_here" class="learn-more">Web Demo</a>
                             </div>
                         </div>
                     </article>
                     <article>
                         <div class="project-card glassmorphic-card">
                             <div class="zoom-container" data-img="chatapp.png">
-                                <img src="01.png" alt="Multi-Model AI Chat App Interface" class="project-image">
+                                <img src="01.png" alt="WhiteBox AI Chat App Interface" class="project-image">
                             </div>
                             <div class="project-content">
-                                <h3>Multi-Model AI Chat (Mobile App)</h3>
-                                <p>Android app that integrates GPT-4o, Claude, Gemini, and more with local API key handling, Room DB storage, and CI/CD deployment.</p>
+                                [cite_start]<h3>WhiteBox AI (AI Chat) - Android App</h3> [cite: 31]
+                                <p>Developed a native Android AI chat application in Kotlin supporting 10+ AI models. [cite_start]Engineered a scalable client-API architecture to handle over 10,000 API calls for the MVP[cite: 34, 35].</p>
+                                [cite_start]<p><strong>Technologies:</strong> Kotlin, Room DB, Android Studio, Secure API Integration[cite: 32].</p>
                             </div>
                             <div class="card-footer">
-                                <a href="https://github.com/soyRex-codes/Multi-Model-AI-Chat-App" class="learn-more">View code</a>
+                                <a href="your_demo_apk_link_here" class="learn-more">Demo APK</a>
                             </div>
                         </div>
                     </article>
                     <article>
                         <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="blogbrain.png">
-                                <img src="02.jpg" alt="AI Blog Generator Homepage" class="project-image">
+                            <div class="zoom-container" data-img="llm_project.png">
+                                <img src="llm_project.png" alt="BearChat LLM Project Representation" class="project-image">
                             </div>
                             <div class="project-content">
-                                <h3>AI Blog Generator (Web App)</h3>
-                                <p>Full-stack app that converts YouTube videos into structured blogs using Django, PostgreSQL, and GitHub-based deployment.</p>
+                                [cite_start]<h3>BearChat - LLM for University Queries</h3> [cite: 25]
+                                <p>An LLM project utilizing transformers and datasets for data loading and processing. [cite_start]Used Pandas for data conversion and scraping and PyTorch for complex neural network mathematics[cite: 28, 29, 30].</p>
+                                [cite_start]<p><strong>Technologies:</strong> Python, PyTorch, Pandas, Transformers, Hugging Face[cite: 26].</p>
                             </div>
                             <div class="card-footer">
-                                <a href="https://github.com/soyRex-codes/Blog_Brain" class="learn-more">View code</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="socket.png">
-                                <img src="socket.png" alt="Socket Programming Loan Calculator UI" class="project-image">
-                            </div>
-                            <div class="project-content">
-                                <h3>Socket Client-Server Loan Calculator </h3>
-                                <p>TCP/UDP-based client-server app that calculates loan payments in real-time with clean input validation.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/soyRex-codes/Computer_Networks/tree/main/Socket_client_server_connection_response" class="learn-more">View code</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="terminal.png">
-                                <img src="terminal.png" alt="Custom C++ Shell Application in Terminal" class="project-image">
-                            </div>
-                            <div class="project-content">
-                                <h3>Custom Shell Application</h3>
-                                <p>Terminal-based shell in C++ that supports command execution, history tracking, and built-in utilities like help and exit.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/soyRex-codes/Fun_projects/blob/main/Newshell.cpp" class="learn-more">View code</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="tictactoe.png">
-                                <img src="tictactoe.png" alt="TicTacToe Game Screenshot" class="project-image">
-                            </div>
-                            <div class="project-content">
-                                <h3>TicTacToe</h3>
-                                <p>Python console game with an AI opponent and logic to detect draws or win conditions on a full board.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/soyRex-codes/Fun_projects/blob/main/TicTacToe.py" class="learn-more">View code</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="lexanalyzer.png">
-                                <img src="lexanalyzer.png" alt="Lexical Analyzer Output Sample" class="project-image">
-                            </div>
-                            <div class="project-content">
-                                <h3>Lexical Analyzer</h3>
-                                <p>Python-based lexer that parses code using regex to identify keywords, operators, and identifiers with comment handling.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/soyRex-codes/Python_Applications/tree/main/Lexical%20Analyzer" class="learn-more">View code</a>
+                                <a href="https://github.com/soyRex-codes" class="learn-more">View on GitHub</a>
                             </div>
                         </div>
                     </article>
@@ -234,82 +198,59 @@
 
         <section id="skills" class="skills section-card">
             <div class="container">
-                <h2 class="section-title neon-text">Technical Stack</h2>
+                <h2 class="section-title neon-text">Technical Skills</h2>
                 <div class="skill-grid">
                     <div class="skill-card neon-border-box">
-                        <h3>Frontend</h3>
+                        <h3>Programming Languages</h3>
                         <ul>
-                            <li>JavaScript</li>
-                            <li>React.js</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </div>
-                    <div class="skill-card neon-border-box">
-                        <h3>Backend</h3>
-                        <ul>
+                            <li>C++</li>
                             <li>Python</li>
-                            <li>C/C++</li>
-                            <li>Node.js</li>
-                            <li>RISCV</li>
-                        </ul>
-                    </div>
-                    <div class="skill-card neon-border-box">
-                        <h3>Databases</h3>
-                        <ul>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>PostgreSQL</li>
-                        </ul>
+                            <li>Kotlin</li>
+                            <li>SQL (PostgreSQL)</li>
+                            <li>Dart</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                        [cite_start]</ul> [cite: 10]
                     </div>
                     <div class="skill-card neon-border-box">
                         <h3>Frameworks</h3>
                         <ul>
+                            <li>Flutter</li>
                             <li>Django</li>
-                            <li>TailwindCSS</li>
-                            <li>SpringBoot</li>
-                        </ul>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                        [cite_start]</ul> [cite: 10]
                     </div>
                     <div class="skill-card neon-border-box">
-                        <h3>Cloud platforms</h3>
+                        <h3>Developer Tools</h3>
                         <ul>
-                            <li>AWS</li>
-                            <li>Azure</li>
-                        </ul>
+                            <li>Git, GitHub, CI/CD</li>
+                            <li>AWS, Google Cloud Run</li>
+                            <li>Docker, VmWare</li>
+                            <li>Firebase, Supabase</li>
+                            <li>JIRA, Figma, Postman</li>
+                            <li>Android Studio, VS Code</li>
+                        [cite_start]</ul> [cite: 13]
                     </div>
                     <div class="skill-card neon-border-box">
-                        <h3>System & Tools</h3>
+                        <h3>Networking</h3>
                         <ul>
-                            <li>Git/GitHUB</li>
-                            <li>VS Code</li>
-                            <li>MS_Office Suite</li>
-                            <li>Canva</li>
-                        </ul>
+                            <li>Linux</li>
+                            <li>Aruba/Cisco CLI</li>
+                            <li>VLAN, DHCP, STP, ACLs</li>
+                            <li>VPN, ClearPass</li>
+                            <li>SolarWinds, Wireshark</li>
+                            <li>Cradlepoint, Bluecat</li>
+                        [cite_start]</ul> [cite: 14]
                     </div>
-                    <div class="skill-card neon-border-box">
-                        <h3>Development Expertise</h3>
+                     <div class="skill-card neon-border-box">
+                        <h3>Certifications</h3>
                         <ul>
-                            <li> Object oriented programming(OOP)</li>
-                            <li> Algorithms & Data Structures</li>
-                            <li> API Integration</li>
-                            <li> Software development Lifecycle(SDLC)</li>
-                            <li> Debugging, Code Optimization</li>
-                            <li> Client-Server Architecture </li>
-                        </ul>
-                    </div>
-                    <div class="skill-card neon-border-box">
-                        <h3>Relevant Coursework</h3>
-                        <ul>
-                            <li> Advanced Data Structures & Algorithms</li>
-                            <li>  Artificial Intelligence, Database Systems</li>
-                            <li> Python</li>
-                            <li> Computational Thinking(C++)</li>
-                            <li> Operating Systems</li>
-                            <li> Computer Architecture </li>
-                            <li> Computer Networks</li>
-                            <li> Web Development</li>
-                            <li> Computer Security</li>
-                            <li>Calculus</li>
-                            <li> Statistics </li>
+                            [cite_start]<li>SQL Intermediate</li> [cite: 52]
+                            [cite_start]<li>Python Developer</li> [cite: 53]
+                            [cite_start]<li>CompTIA A+ (Expected Dec 2025)</li> [cite: 51]
+                            [cite_start]<li>CompTIA Network+ (Expected Dec 2025)</li> [cite: 51]
                         </ul>
                     </div>
                 </div>
@@ -322,10 +263,10 @@
                 <p>Let’s build something impactful. Reach out to discuss opportunities or collaborations.</p>
                 <div class="glass-contact-box">
                     <ul class="contact-info">
-                        <li>Email: <a href="mailto:rajkushwaha0213@gmail.com">rajkushwaha0213@gmail.com</a></li>
-                        <li>LinkedIn: <a href="https://www.linkedin.com/in/rajkumar-kushwaha-356907256/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
-                        <li>GitHub: <a href="https://github.com/soyRex-codes" target="_blank" rel="noopener">GitHub Profile</a></li>
-                        <li>Phone: +1 417-512-3810</li>
+                        [cite_start]<li>Email: <a href="mailto:rajkushwaha0213@gmail.com">rajkushwaha0213@gmail.com</a></li> [cite: 4]
+                        [cite_start]<li>LinkedIn: <a href="https://linkedin.com/in/rajkumar-kushwaha" target="_blank" rel="noopener">linkedin.com/in/rajkumar-kushwaha</a></li> [cite: 6]
+                        [cite_start]<li>GitHub: <a href="https://github.com/soyRex-codes" target="_blank" rel="noopener">github.com/soyRex-codes</a></li> [cite: 11]
+                        [cite_start]<li>Phone: <a href="tel:+14175123810">+1 417-512-3810</a></li> [cite: 2]
                     </ul>
                 </div>
             </div>
@@ -334,11 +275,10 @@
 
     <footer class="neon-footer">
         <div class="container">
-            <p>&copy; 2024 Rajkumar Kushwaha. Designer & Developer.</p>
+            <p>&copy; 2025 Rajkumar Kushwaha. Designer & Developer.</p>
         </div>
     </footer>
 
-    <!-- Image Zoom Modal -->
     <div id="image-modal" class="image-modal">
         <span id="close-modal">&times;</span>
         <img class="modal-content" id="modal-image">
