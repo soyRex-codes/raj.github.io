@@ -3,88 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajkumar Kushwaha</title>
+    <title>Rajkumar Kushwaha | Software Engineer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Consistent Project Card Layout */
-        #projects .project-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
-        #projects .project-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-            min-height: 480px;
-            max-width: 320px;
-            flex: 1 1 300px;
-        }
-        .card-footer {
-            margin-top: 20px;
-            /* Added for multiple buttons */
-            display: flex;
-            gap: 10px;
-            justify-content: flex-start;
-        }
-        @media (max-width: 768px) {
-         .hero-heading {
-           font-size: 2rem;
-         }
-
-         .hero-subheading {
-           font-size: 1rem;
-         }
-
-         .hero-link {
-           padding: 10px 16px;
-           font-size: 0.9rem;
-         }
-
-         .hero-profile-pic {
-           width: 180px;
-           height: auto;
-         }
-
-         .section-title {
-           font-size: 1.8rem;
-         }
-
-         .project-card {
-           min-height: auto;
-           max-width: 100%;
-         }
-
-         .project-card p {
-           font-size: 0.95rem;
-         }
-
-         .learn-more {
-           font-size: 0.9rem;
-           padding: 8px 16px;
-         }
-
-         .contact-info li {
-           font-size: 0.95rem;
-         }
-
-         footer p {
-           font-size: 0.8rem;
-         }
-        }
-    </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
+            <a href="#home" class="nav-logo">RK</a>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -94,34 +25,34 @@
         </nav>
     </header>
 
-    <section id="home" class="hero apple-style-hero">
-        <div class="hero-inner">
-            <img src="pp.jpg" alt="Rajkumar Kushwaha Profile Photo" class="hero-profile-pic">
-            [cite_start]<h1 class="hero-heading">Rajkumar Kushwaha</h1> [cite: 1]
-            <p class="hero-subheading">Software Engineer | Founder of founder Vers | IT Network Engineer</p>
-            <div class="hero-links">
-                <a href="#projects" class="hero-link">View Projects</a>
-                <a href="Kushwaha_Rajkumar_Engineer.pdf" class="hero-link secondary" download>Download Resume</a>
-            </div>
-        </div>
-    </section>
-
     <main>
-        <section id="about" class="about section-card">
-            <div class="container">
-                <h2 class="section-title neon-text">About Me</h2>
+        <section id="home" class="hero">
+            <div class="hero-inner container">
+                <img src="pp.jpg" alt="Rajkumar Kushwaha Profile Photo" class="hero-profile-pic">
+                [cite_start]<h1 class="hero-heading">Rajkumar Kushwaha [cite: 1]</h1>
+                <p class="hero-subheading">Software Engineer | [cite_start]Founder of founder Vers [cite: 16] | [cite_start]IT Network Engineer [cite: 38]</p>
+                <div class="hero-links">
+                    <a href="#projects" class="hero-link primary">View My Work</a>
+                    <a href="Kushwaha_Rajkumar_Engineer.pdf" class="hero-link secondary" download>Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container reveal">
+                <h2 class="section-title">About Me</h2>
                 [cite_start]<p>I am a dedicated and results-driven Computer Science student at Missouri State University, pursuing minors in IT Cybersecurity, Mathematics, and Entrepreneurship[cite: 5, 7]. My passion lies in architecting and developing full-stack applications and robust network infrastructures. [cite_start]I am the founder of 'founder Vers' [cite: 16][cite_start], a startup networking application I built from the ground up using Flutter and PostgreSQL[cite: 19]. [cite_start]My professional experience includes roles as an IT Network Engineer Intern at CoxHealth [cite: 38][cite_start], where I managed production network hardware and enhanced security protocols [cite: 40, 42][cite_start], and as a Senior IT Support Specialist at my university [cite: 44][cite_start], where I achieved a 98% first-contact resolution rate and mentored junior technicians[cite: 48, 49]. I thrive in dynamic environments where I can apply my skills in software development, network management, and problem-solving to create impactful technology solutions.</p>
             </div>
         </section>
 
-        <section id="experience" class="experience section-card">
-            <div class="container">
-                <h2 class="section-title neon-text">Experience</h2>
+        <section id="experience" class="experience">
+            <div class="container reveal">
+                <h2 class="section-title">Experience</h2>
                 <div class="experience-grid">
-                    <div class="experience-card glassmorphic-card">
+                    <div class="experience-card">
                         <h3>IT Network Engineer Intern</h3>
-                        <p><strong>CoxHealth</strong> | Springfield, MO</p>
-                        [cite_start]<p><em>May 2025 – Aug 2025</em></p> [cite: 39]
+                        <p class="experience-meta"><strong>CoxHealth</strong> | Springfield, MO</p>
+                        [cite_start]<p class="experience-date">May 2025 – Aug 2025 [cite: 39]</p>
                         <ul>
                             [cite_start]<li>Owned the end-to-end configuration of a network test lab, preparing stacked Aruba switches for production with VLANs, DHCP, DNS, and ACLs[cite: 40].</li>
                             [cite_start]<li>Diagnosed and resolved critical network outages in high-stakes environments, including a Cardiovascular ICU, by performing careful firmware updates without disrupting patient care[cite: 41].</li>
@@ -129,10 +60,10 @@
                             [cite_start]<li>Deployed and configured Aruba 3810M, 7240xm, and Cisco Catalyst switches in production environments[cite: 43].</li>
                         </ul>
                     </div>
-                    <div class="experience-card glassmorphic-card">
+                    <div class="experience-card">
                         <h3>Senior IT Support Specialist</h3>
-                        <p><strong>Missouri State University</strong> | Springfield, MO</p>
-                        [cite_start]<p><em>June 2023 – Present</em></p> [cite: 46, 47]
+                        <p class="experience-meta"><strong>Missouri State University</strong> | Springfield, MO</p>
+                        [cite_start]<p class="experience-date">June 2023 – Present [cite: 46, 47]</p>
                         <ul>
                             [cite_start]<li>Utilized Team Dynamix, Bomgar, and Azure to manage user accounts and troubleshoot issues, maintaining a 98% first-contact resolution rate for IT support tickets[cite: 48].</li>
                             [cite_start]<li>Mentored and trained junior technicians on ITIL best practices, boosting team efficiency by 60% and improving knowledge sharing[cite: 49].</li>
@@ -142,53 +73,47 @@
             </div>
         </section>
 
-        <section id="projects" class="projects section-card">
-            <div class="container">
-                <h2 class="section-title neon-text">Projects</h2>
+        <section id="projects" class="projects">
+            <div class="container reveal">
+                <h2 class="section-title">Projects</h2>
                 <div class="project-grid">
-                    <article>
-                        <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="startupNest.png">
-                                <img src="startupNest.png" alt="founder Vers App Screenshot" class="project-image">
-                            </div>
-                            <div class="project-content">
-                                [cite_start]<h3>founder Vers - Mobile & Web App</h3> [cite: 16]
-                                [cite_start]<p>Architected and developed a full-stack startup networking application featuring user authentication, dynamic posts, real-time messaging, and investment tracking, built with a feature-first architecture[cite: 19, 20, 22].</p>
-                                [cite_start]<p><strong>Technologies:</strong> Flutter, Dart, PostgreSQL, Supabase, Docker, Git[cite: 17].</p>
-                            </div>
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="startupNest.png" alt="founder Vers App Screenshot" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            [cite_start]<h3>founder Vers - Mobile & Web App [cite: 16]</h3>
+                            [cite_start]<p>Architected and developed a full-stack startup networking application featuring user authentication, dynamic posts, real-time messaging, and investment tracking, built with a feature-first architecture[cite: 19, 20, 22].</p>
+                            [cite_start]<p class="tech-stack"><strong>Technologies:</strong> Flutter, Dart, PostgreSQL, Supabase, Docker, Git[cite: 17].</p>
                             <div class="card-footer">
-                                <a href="your_mobile_demo_link_here" class="learn-more">Mobile Demo</a>
-                                <a href="your_web_demo_link_here" class="learn-more">Web Demo</a>
+                                <a href="#" class="learn-more">Mobile Demo</a>
+                                <a href="#" class="learn-more">Web Demo</a>
                             </div>
                         </div>
                     </article>
-                    <article>
-                        <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="chatapp.png">
-                                <img src="01.png" alt="WhiteBox AI Chat App Interface" class="project-image">
-                            </div>
-                            <div class="project-content">
-                                [cite_start]<h3>WhiteBox AI (AI Chat) - Android App</h3> [cite: 31]
-                                <p>Developed a native Android AI chat application in Kotlin supporting 10+ AI models. [cite_start]Engineered a scalable client-API architecture to handle over 10,000 API calls for the MVP[cite: 34, 35].</p>
-                                [cite_start]<p><strong>Technologies:</strong> Kotlin, Room DB, Android Studio, Secure API Integration[cite: 32].</p>
-                            </div>
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="01.png" alt="WhiteBox AI Chat App Interface" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            [cite_start]<h3>WhiteBox AI (AI Chat) - Android App [cite: 31]</h3>
+                            <p>Developed a native Android AI chat application in Kotlin supporting 10+ AI models. [cite_start]Engineered a scalable client-API architecture to handle over 10,000 API calls for the MVP[cite: 34, 35].</p>
+                            [cite_start]<p class="tech-stack"><strong>Technologies:</strong> Kotlin, Room DB, Android Studio, Secure API Integration[cite: 32].</p>
                             <div class="card-footer">
-                                <a href="your_demo_apk_link_here" class="learn-more">Demo APK</a>
+                                <a href="#" class="learn-more">Demo APK</a>
                             </div>
                         </div>
                     </article>
-                    <article>
-                        <div class="project-card glassmorphic-card">
-                            <div class="zoom-container" data-img="llm_project.png">
-                                <img src="llm_project.png" alt="BearChat LLM Project Representation" class="project-image">
-                            </div>
-                            <div class="project-content">
-                                [cite_start]<h3>BearChat - LLM for University Queries</h3> [cite: 25]
-                                <p>An LLM project utilizing transformers and datasets for data loading and processing. [cite_start]Used Pandas for data conversion and scraping and PyTorch for complex neural network mathematics[cite: 28, 29, 30].</p>
-                                [cite_start]<p><strong>Technologies:</strong> Python, PyTorch, Pandas, Transformers, Hugging Face[cite: 26].</p>
-                            </div>
+                    <article class="project-card">
+                        <div class="project-image-container">
+                             <img src="llm_project.png" alt="BearChat LLM Project Representation" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            [cite_start]<h3>BearChat - LLM for University Queries [cite: 25]</h3>
+                            [cite_start]<p>An LLM project utilizing transformers for data loading/processing, Pandas for data conversion/scraping, and PyTorch for complex neural network mathematics[cite: 28, 29, 30].</p>
+                            [cite_start]<p class="tech-stack"><strong>Technologies:</strong> Python, PyTorch, Pandas, Transformers, Hugging Face[cite: 26].</p>
                             <div class="card-footer">
-                                <a href="https://github.com/soyRex-codes" class="learn-more">View on GitHub</a>
+                                <a href="https://github.com/soyRex-codes" target="_blank" rel="noopener" class="learn-more">View on GitHub</a>
                             </div>
                         </div>
                     </article>
@@ -196,122 +121,83 @@
             </div>
         </section>
 
-        <section id="skills" class="skills section-card">
-            <div class="container">
-                <h2 class="section-title neon-text">Technical Skills</h2>
+        <section id="skills" class="skills">
+            <div class="container reveal">
+                <h2 class="section-title">Technical Skills</h2>
                 <div class="skill-grid">
-                    <div class="skill-card neon-border-box">
+                    <div class="skill-card">
                         <h3>Programming Languages</h3>
                         <ul>
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>Kotlin</li>
-                            <li>SQL (PostgreSQL)</li>
-                            <li>Dart</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
+                            <li>C++</li><li>Python</li><li>Kotlin</li><li>SQL (PostgreSQL)</li><li>Dart</li><li>JavaScript</li><li>HTML/CSS</li>
                         [cite_start]</ul> [cite: 10]
                     </div>
-                    <div class="skill-card neon-border-box">
+                    <div class="skill-card">
                         <h3>Frameworks</h3>
                         <ul>
-                            <li>Flutter</li>
-                            <li>Django</li>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Express</li>
+                           <li>Flutter</li><li>Django</li><li>React</li><li>Node.js</li><li>Express</li>
                         [cite_start]</ul> [cite: 10]
                     </div>
-                    <div class="skill-card neon-border-box">
+                    <div class="skill-card">
                         <h3>Developer Tools</h3>
                         <ul>
-                            <li>Git, GitHub, CI/CD</li>
-                            <li>AWS, Google Cloud Run</li>
-                            <li>Docker, VmWare</li>
-                            <li>Firebase, Supabase</li>
-                            <li>JIRA, Figma, Postman</li>
-                            <li>Android Studio, VS Code</li>
+                            <li>Git/GitHub</li><li>CI/CD</li><li>AWS</li><li>Docker</li><li>Firebase</li><li>Supabase</li><li>JIRA</li><li>Postman</li>
                         [cite_start]</ul> [cite: 13]
                     </div>
-                    <div class="skill-card neon-border-box">
+                    <div class="skill-card">
                         <h3>Networking</h3>
                         <ul>
-                            <li>Linux</li>
-                            <li>Aruba/Cisco CLI</li>
-                            <li>VLAN, DHCP, STP, ACLs</li>
-                            <li>VPN, ClearPass</li>
-                            <li>SolarWinds, Wireshark</li>
-                            <li>Cradlepoint, Bluecat</li>
+                            <li>Linux</li><li>Aruba/Cisco CLI</li><li>VLAN/DHCP</li><li>ACLs/VPN</li><li>SolarWinds</li><li>Wireshark</li>
                         [cite_start]</ul> [cite: 14]
                     </div>
-                     <div class="skill-card neon-border-box">
+                     <div class="skill-card">
                         <h3>Certifications</h3>
                         <ul>
-                            [cite_start]<li>SQL Intermediate</li> [cite: 52]
-                            [cite_start]<li>Python Developer</li> [cite: 53]
-                            [cite_start]<li>CompTIA A+ (Expected Dec 2025)</li> [cite: 51]
-                            [cite_start]<li>CompTIA Network+ (Expected Dec 2025)</li> [cite: 51]
+                            [cite_start]<li>SQL Intermediate [cite: 52]</li>
+                            [cite_start]<li>Python Developer [cite: 53]</li>
+                            [cite_start]<li>CompTIA A+ (Expected Dec 2025) [cite: 51]</li>
+                            [cite_start]<li>CompTIA Network+ (Expected Dec 2025) [cite: 51]</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact section-card">
-            <div class="container">
-                <h2 class="section-title neon-text">Contact</h2>
-                <p>Let’s build something impactful. Reach out to discuss opportunities or collaborations.</p>
-                <div class="glass-contact-box">
+        <section id="contact" class="contact">
+            <div class="container reveal">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-subheading">Let’s build something impactful. Reach out to discuss opportunities or collaborations.</p>
+                <div class="contact-box">
                     <ul class="contact-info">
-                        [cite_start]<li>Email: <a href="mailto:rajkushwaha0213@gmail.com">rajkushwaha0213@gmail.com</a></li> [cite: 4]
-                        [cite_start]<li>LinkedIn: <a href="https://linkedin.com/in/rajkumar-kushwaha" target="_blank" rel="noopener">linkedin.com/in/rajkumar-kushwaha</a></li> [cite: 6]
-                        [cite_start]<li>GitHub: <a href="https://github.com/soyRex-codes" target="_blank" rel="noopener">github.com/soyRex-codes</a></li> [cite: 11]
-                        [cite_start]<li>Phone: <a href="tel:+14175123810">+1 417-512-3810</a></li> [cite: 2]
+                        [cite_start]<li>Email: <a href="mailto:rajkushwaha0213@gmail.com">rajkushwaha0213@gmail.com</a> [cite: 4]</li>
+                        [cite_start]<li>LinkedIn: <a href="https://linkedin.com/in/rajkumar-kushwaha" target="_blank" rel="noopener">linkedin.com/in/rajkumar-kushwaha</a> [cite: 6]</li>
+                        [cite_start]<li>GitHub: <a href="https://github.com/soyRex-codes" target="_blank" rel="noopener">github.com/soyRex-codes</a> [cite: 11]</li>
+                        [cite_start]<li>Phone: <a href="tel:+14175123810">+1 417-512-3810</a> [cite: 2]</li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="neon-footer">
+    <footer>
         <div class="container">
-            <p>&copy; 2025 Rajkumar Kushwaha. Designer & Developer.</p>
+            <p>&copy; 2025 Rajkumar Kushwaha. Designed with a modern touch.</p>
         </div>
     </footer>
-
-    <div id="image-modal" class="image-modal">
-        <span id="close-modal">&times;</span>
-        <img class="modal-content" id="modal-image">
-    </div>
-
+    
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const modal = document.getElementById('image-modal');
-            const modalImg = document.getElementById('modal-image');
-            const closeBtn = document.getElementById('close-modal');
-
-            document.querySelectorAll('.zoom-container').forEach(container => {
-                const img = container.querySelector('img');
-                container.addEventListener('click', () => {
-                    modal.style.display = "block";
-                    modalImg.src = img.src;
+            // Scroll Reveal Animation
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
                 });
-            });
+            }, { threshold: 0.1 });
 
-            closeBtn.addEventListener('click', () => {
-                modal.style.display = "none";
-            });
-
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    modal.style.display = "none";
-                }
-            });
-
-            document.addEventListener('keydown', (e) => {
-                if (e.key === "Escape") {
-                    modal.style.display = "none";
-                }
+            revealElements.forEach(el => {
+                revealObserver.observe(el);
             });
         });
     </script>
