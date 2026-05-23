@@ -106,8 +106,34 @@
       <div class="container">
         <h2 class="section-title reveal">Featured Projects</h2>
         <div class="project-grid">
+          <article class="project-card featured-live-project glass reveal">
+            <div class="project-preview-frame">
+              <iframe
+                src="https://foundervers.com/"
+                title="Foundervers website preview"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div>
+              <h3>Foundervers</h3>
+              <p class="project-sub">Startup Networking Platform</p>
+              <p><strong>Challenge:</strong> Create an end-to-end product for entrepreneur collaboration and monetization.</p>
+              <p><strong>Built:</strong> Full SDLC from concept to release, financial integrations (Stripe + Apple IAP), and secure backend with MFA + Row-Level Security.</p>
+              <p><strong>Result:</strong> 13+ production iterations driven by real user feedback and engagement metrics.</p>
+              <p class="stack">Flutter · PostgreSQL · Docker · Supabase · Firebase · Python</p>
+              <p class="project-links">
+                <a href="https://foundervers.com/" target="_blank" rel="noopener noreferrer">Open Live Site</a>
+              </p>
+              <p class="project-preview-note">
+                If the preview does not load because of browser embedding policies, open the live site in a new tab.
+              </p>
+            </div>
+          </article>
+
           <article class="project-card glass reveal">
-            <img src="sampleimg.png" alt="Boomer AI project visual" loading="lazy" />
+            <video class="project-media-video" controls preload="metadata" playsinline>
+              <source src="Boomer_ai_demo.mp4" type="video/mp4" />Sorry, this browser does not support the video tag.</video>
             <div>
               <h3>Boomer AI</h3>
               <p class="project-sub">LLM Fine-Tuning + Full-Stack Delivery</p>
@@ -119,7 +145,7 @@
           </article>
 
           <article class="project-card glass reveal">
-            <img src="terminal.png" alt="BankingApp backend architecture visual" loading="lazy" />
+            <img src="Bankingapp.png" alt="BankingApp backend architecture visual" loading="lazy" />
             <div>
               <h3>BankingApp</h3>
               <p class="project-sub">Enterprise-Grade .NET Backend</p>
@@ -131,19 +157,7 @@
           </article>
 
           <article class="project-card glass reveal">
-            <img src="startupNest.png" alt="Foundervers platform screenshot" loading="lazy" />
-            <div>
-              <h3>Foundervers</h3>
-              <p class="project-sub">Startup Networking Platform</p>
-              <p><strong>Challenge:</strong> Create an end-to-end product for entrepreneur collaboration and monetization.</p>
-              <p><strong>Built:</strong> Full SDLC from concept to release, financial integrations (Stripe + Apple IAP), and secure backend with MFA + Row-Level Security.</p>
-              <p><strong>Result:</strong> 13+ production iterations driven by real user feedback and engagement metrics.</p>
-              <p class="stack">Flutter · PostgreSQL · Docker · Supabase · Firebase · Python</p>
-            </div>
-          </article>
-
-          <article class="project-card glass reveal">
-            <img src="webserver.jpg" alt="Distributed systems and SQL performance visual" loading="lazy" />
+            <img src="QUEUE_System.png" alt="Distributed systems and SQL performance visual" loading="lazy" />
             <div>
               <h3>TuningSQL Internal Platform Work</h3>
               <p class="project-sub">Distributed Queue + Data Platform Optimization</p>
@@ -151,6 +165,39 @@
               <p><strong>Built:</strong> Queue routing infrastructure, ETL automation, and database tuning workflows across critical production paths.</p>
               <p><strong>Result:</strong> Faster inference scheduling, 70%+ process automation, and 5x retrieval speed improvement.</p>
               <p class="stack">Python · PHP · PostgreSQL · Linux · Distributed Systems</p>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <img src="AI Meeting Intelligence System.png" alt="Orbi AI meeting intelligence system workflow visual" loading="lazy" />
+            <div>
+              <h3>Orbi - AI Meeting Intelligence System</h3>
+              <p class="project-sub">Meeting Intelligence + Action Extraction</p>
+              <p><strong>Challenge:</strong> Long meetings produced important decisions and follow-ups, but manual note review and replaying recordings was slow and error-prone.</p>
+              <p><strong>Built:</strong> A pipeline direction for processing recordings into speaker-attributed transcripts and structured outputs such as decisions, action items, owners, and due dates.</p>
+              <p><strong>Progress:</strong> Project scaffolding is complete, and integrated testing of audio preprocessing + Whisper transcription is working end-to-end.</p>
+              <p><strong>Validation Findings:</strong> Audio is consistently normalized (16kHz mono) before transcription, larger Whisper models improved contextual accuracy, and smaller models sometimes performed better for speaker attribution.</p>
+              <p><strong>Research Insight:</strong> Early tests show transcription quality drops on thicker accents (for example Filipino and African accents), highlighting accent-robustness as a core improvement area.</p>
+              <p><strong>Team:</strong> Group project with collaborator Rikesh Sapkota (<a href="https://github.com/rikesh28" target="_blank" rel="noopener noreferrer">@rikesh28</a>).</p>
+              <p class="stack">Python · Whisper · Audio Processing · NLP · Evaluation Pipelines</p>
+              <p class="project-links">
+                <a href="https://github.com/soyRex-codes/Orbi---Ai-Meeting-Intelligence-System" target="_blank" rel="noopener noreferrer">Codebase</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <img src="Blog_brain.png" alt="Blog Brain project interface preview" loading="lazy" />
+            <div>
+              <h3>Blog Brain</h3>
+              <p class="project-sub">AI-Assisted Content Ideation Platform</p>
+              <p><strong>Challenge:</strong> Brainstorming high-quality blog ideas and structures repeatedly can be slow and inconsistent.</p>
+              <p><strong>Built:</strong> A project-focused workflow to generate content ideas, organize topics, and accelerate early drafting with AI assistance.</p>
+              <p><strong>Result:</strong> Improved speed from idea to draft-ready outline while keeping output aligned to target themes.</p>
+              <p class="stack">Python · AI Workflows · Content Automation</p>
+              <p class="project-links">
+                <a href="https://github.com/soyRex-codes/Blog_Brain" target="_blank" rel="noopener noreferrer">Codebase</a>
+              </p>
             </div>
           </article>
         </div>
