@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Rajkumar Kushwaha portfolio - Software Engineer focused on AI/Backend and distributed systems." />
+  <title>Rajkumar Kushwaha | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header" id="home">
+    <div class="container nav-wrap glass">
+      <a class="brand" href="#home" aria-label="Go to top">RK</a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section">
+      <div class="container hero-grid reveal">
+        <div>
+          <p class="kicker">Springfield, MO · Open to SWE opportunities</p>
+          <h1>Rajkumar Kushwaha</h1>
+          <p class="hero-role">Software Engineer | AI/Backend | Distributed Systems</p>
+          <p class="hero-copy">
+            I build production-ready systems across AI, backend, and infrastructure. My recent work includes reducing queue wait times by 40%, cutting p99 database latency from 900ms to 180ms, and shipping secure APIs with 90%+ test coverage.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View Featured Work</a>
+            <a class="btn btn-ghost" href="Resume_RajKumarK.pdf" download>Download Resume</a>
+          </div>
+        </div>
+        <aside class="hero-card glass" aria-label="Quick facts about Rajkumar">
+          <img src="pp.jpg" alt="Portrait of Rajkumar Kushwaha" loading="eager" />
+          <ul>
+            <li><span>Education</span><strong>B.S. Computer Science, MSU (May 2026)</strong></li>
+            <li><span>Current Role</span><strong>SWE Intern, eFactory - TuningSQL</strong></li>
+            <li><span>Core Stack</span><strong>C#, Python, PostgreSQL, Docker, Azure</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="impact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Impact Snapshot</h2>
+        <div class="stats-grid">
+          <article class="stat glass reveal"><h3>40%</h3><p>Lowered average GPU inference queue wait times with distributed worker orchestration.</p></article>
+          <article class="stat glass reveal"><h3>5x</h3><p>Reduced p99 PostgreSQL retrieval latency from 900ms to 180ms on 10M+ row datasets.</p></article>
+          <article class="stat glass reveal"><h3>70%+</h3><p>Eliminated manual preprocessing effort by automating PDF/whitepaper ETL ingestion.</p></article>
+          <article class="stat glass reveal"><h3>90%+</h3><p>Achieved unit/integration coverage on enterprise backend services and auth flows.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Experience</h2>
+        <div class="timeline">
+          <article class="timeline-card glass reveal">
+            <p class="meta">Jan 2026 - Present · Springfield, MO</p>
+            <h3>Software Engineering Intern · eFactory - TuningSQL</h3>
+            <ul>
+              <li>Designed and deployed a distributed Python/PHP worker-queue for GPU inference routing across multi-server infrastructure with zero-downtime failover.</li>
+              <li>Built automated ETL pipelines (Python, PostgreSQL, PHP) for high-volume document ingestion into structured records, unblocking non-technical teams.</li>
+              <li>Optimized 8+ critical PostgreSQL schemas and execution plans through index strategy and join tuning.</li>
+              <li>Delivered 3 internal tooling features from ambiguous requirements with documented API contracts.</li>
+            </ul>
+          </article>
+          <article class="timeline-card glass reveal">
+            <p class="meta">May 2025 - Aug 2025 · Springfield, MO</p>
+            <h3>IT Infrastructure & Systems Engineering Intern · CoxHealth</h3>
+            <ul>
+              <li>Resolved critical Aruba-switch outages in life-critical hospital environments in under 15 minutes without care disruption.</li>
+              <li>Provisioned 20+ Cisco and Aruba devices in production with 100% HIPAA compliance and zero post-deployment audit findings.</li>
+              <li>Worked across large-scale topology, VLAN segmentation, and enterprise incident workflows to improve reliability decisions.</li>
+              <li>Supported high-security data center refreshes spanning firewalls, NICs, RAM, storage, and firmware upgrades.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card glass reveal">
+            <img src="sampleimg.png" alt="Boomer AI project visual" loading="lazy" />
+            <div>
+              <h3>Boomer AI</h3>
+              <p class="project-sub">LLM Fine-Tuning + Full-Stack Delivery</p>
+              <p><strong>Challenge:</strong> Deliver domain-accurate LLM responses without expensive enterprise GPUs.</p>
+              <p><strong>Built:</strong> LoRA-tuned Llama 3.1-8B pipeline, automated dataset engineering for 8,000+ documents, and production Flask API + Flutter client.</p>
+              <p><strong>Result:</strong> 85% reduction in irrelevant outputs and launch readiness for 200+ concurrent users.</p>
+              <p class="stack">Python · PyTorch · LoRA · Flask · Flutter · Hugging Face · PostgreSQL</p>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <img src="terminal.png" alt="BankingApp backend architecture visual" loading="lazy" />
+            <div>
+              <h3>BankingApp</h3>
+              <p class="project-sub">Enterprise-Grade .NET Backend</p>
+              <p><strong>Challenge:</strong> Build production IAM and API reliability patterns from the ground up.</p>
+              <p><strong>Built:</strong> ASP.NET Core Identity with RBAC/JWT/refresh tokens, async Minimal APIs, structured logging, and automated Azure CI/CD.</p>
+              <p><strong>Result:</strong> 90%+ test coverage with zero manual deployment steps in release flow.</p>
+              <p class="stack">C# · ASP.NET Core (.NET 10) · EF Core · MSSQL · Docker · Azure · xUnit</p>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <img src="startupNest.png" alt="Foundervers platform screenshot" loading="lazy" />
+            <div>
+              <h3>Foundervers</h3>
+              <p class="project-sub">Startup Networking Platform</p>
+              <p><strong>Challenge:</strong> Create an end-to-end product for entrepreneur collaboration and monetization.</p>
+              <p><strong>Built:</strong> Full SDLC from concept to release, financial integrations (Stripe + Apple IAP), and secure backend with MFA + Row-Level Security.</p>
+              <p><strong>Result:</strong> 13+ production iterations driven by real user feedback and engagement metrics.</p>
+              <p class="stack">Flutter · PostgreSQL · Docker · Supabase · Firebase · Python</p>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <img src="webserver.jpg" alt="Distributed systems and SQL performance visual" loading="lazy" />
+            <div>
+              <h3>TuningSQL Internal Platform Work</h3>
+              <p class="project-sub">Distributed Queue + Data Platform Optimization</p>
+              <p><strong>Challenge:</strong> Improve throughput and data-access performance under growing job load.</p>
+              <p><strong>Built:</strong> Queue routing infrastructure, ETL automation, and database tuning workflows across critical production paths.</p>
+              <p><strong>Result:</strong> Faster inference scheduling, 70%+ process automation, and 5x retrieval speed improvement.</p>
+              <p class="stack">Python · PHP · PostgreSQL · Linux · Distributed Systems</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Technical Skills</h2>
+        <div class="skills-grid">
+          <article class="glass reveal"><h3>Languages</h3><p>C#, Python, JavaScript, TypeScript, SQL, HTML/CSS, Kotlin</p></article>
+          <article class="glass reveal"><h3>Frameworks</h3><p>ASP.NET Core, EF Core, Flask, Django, React, PyTorch, Hugging Face Transformers</p></article>
+          <article class="glass reveal"><h3>Databases</h3><p>PostgreSQL, MSSQL, index strategy, schema design, query optimization</p></article>
+          <article class="glass reveal"><h3>Infrastructure</h3><p>Docker, Azure, GitHub Actions, Linux CLI, distributed systems</p></article>
+          <article class="glass reveal"><h3>Core Concepts</h3><p>REST APIs, RBAC/JWT auth, ETL pipelines, LLM fine-tuning, production observability</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Achievements & Recognition</h2>
+        <div class="achievements glass reveal">
+          <ul>
+            <li>Dean's List (2023-2026)</li>
+            <li>Pete Sanderson Computer Science Scholarship Recipient</li>
+            <li>International Excellence Scholarship Recipient</li>
+            <li>LeetCode: Top 30% globally, 100+ problems solved</li>
+            <li>GitHub Profile Badges: Pull Shark x2, YOLO, Quickdraw</li>
+            <li>GPA: 3.41 / 4.0 · Minors in Cybersecurity and Mathematics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-card glass reveal">
+          <p>Let’s discuss software engineering opportunities, backend systems, and AI product work.</p>
+          <ul>
+            <li>Email: <a href="mailto:rajkk0213@gmail.com">rajkk0213@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/rajkushwaha1" target="_blank" rel="noopener noreferrer">linkedin.com/in/rajkushwaha1</a></li>
+            <li>GitHub: <a href="https://github.com/soyRex-codes" target="_blank" rel="noopener noreferrer">github.com/soyRex-codes</a></li>
+            <li>Phone: <a href="tel:+14175123810">+1 (417) 512-3810</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rajkumar Kushwaha · Designed for recruiter-ready clarity and impact.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
