@@ -187,6 +187,21 @@ button:focus-visible {
   margin-bottom: 28px;
 }
 
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-intro {
+  max-width: 62ch;
+  margin: -8px 0 32px;
+  color: var(--text-2);
+}
+
 .glass {
   background: linear-gradient(150deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.03));
   border: 1px solid var(--line);
@@ -426,15 +441,44 @@ html[data-theme="light"] .btn-ghost {
   padding-left: 20px;
 }
 
+.timeline-card h3 span {
+  color: var(--text-1);
+  font-weight: 500;
+}
+
 .project-grid {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.primary-project-grid {
+  align-items: start;
+}
+
+.primary-project-grid .project-card:nth-child(3) {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+}
+
 .project-card {
   display: grid;
   gap: 16px;
+}
+
+.project-card--primary {
+  border-color: rgba(255, 176, 123, 0.3);
+}
+
+.project-card--secondary {
+  padding: 18px;
+  gap: 14px;
+  box-shadow: none;
+  opacity: 0.9;
+}
+
+.project-card--secondary h3 {
+  font-size: 1.2rem;
 }
 
 .featured-live-project {
@@ -463,6 +507,15 @@ html[data-theme="light"] .btn-ghost {
 .project-sub {
   color: #ffc39b;
   margin: 6px 0 8px;
+}
+
+.project-details {
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+
+.project-details li + li {
+  margin-top: 7px;
 }
 
 .stack {
@@ -512,6 +565,76 @@ html[data-theme="light"] .btn-ghost {
   margin-top: 10px;
   color: var(--text-2);
   font-size: 0.92rem;
+}
+
+.additional-work {
+  margin-top: 72px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+
+.additional-work-heading {
+  max-width: 620px;
+  margin-bottom: 24px;
+}
+
+.additional-work-heading h3 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.additional-work-heading p:last-child {
+  margin-bottom: 0;
+  color: var(--text-2);
+}
+
+.additional-project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.education-card {
+  padding: 22px;
+}
+
+.education-card > p:last-child {
+  margin-bottom: 0;
+}
+
+.graduate-focus {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px 34px;
+  align-items: start;
+  padding: 24px;
+  margin-bottom: 16px;
+  border-color: rgba(140, 198, 255, 0.28);
+}
+
+.graduate-focus h3 {
+  font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+}
+
+.graduate-focus ul {
+  margin: 2px 0 0;
+  padding-left: 20px;
+}
+
+.graduate-focus li + li {
+  margin-top: 7px;
+}
+
+.thesis-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--text-1);
 }
 
 .demo-video {
@@ -565,7 +688,15 @@ html[data-theme="light"] .nav-wrap {
 
 @media (max-width: 1024px) {
   .hero-grid,
-  .project-grid {
+  .project-grid,
+  .additional-project-grid,
+  .education-grid,
+  .graduate-focus {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-project-grid .project-card:nth-child(3) {
+    grid-column: auto;
     grid-template-columns: 1fr;
   }
 
